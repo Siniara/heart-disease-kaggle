@@ -10,7 +10,7 @@ Classify Heart Disease risk using [Kaggle's Heart Failure Prediction Dataset](ht
 1. **Explore and Compare models.** Start with [./initial_modelling.ipynb](initial_modelling.ipynb). Two classifiers are compared via nested cross-validation — Logistic Regression and XGBoost. 
 
 
-2. **Train the Final Model**. Train Logistic Regression in [./train_model.py](train_model.py), saved as `model.joblib`. Run: the script in CL `python ./train_model.py `
+2. **Train the Final Model**. Train Logistic Regression in [./train_model.py](train_model.py), saved as `./model/model.joblib`. Run the script in CL: `python ./train_model.py `
 
 3. **Inspect Features.** See an overview of final model feature importance in [./feature_importance.ipynb](feature_importance.ipynb).
 

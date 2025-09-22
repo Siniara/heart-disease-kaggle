@@ -36,3 +36,5 @@ For pip users:
 ```bash
 pip install -r ./requirements.txt
 ```
+## Images
+Static images for `feature_importance.ipynb` are provided in [`./images/`](images/) for convenience and to allow display on GitHub. If you wish to generate them on your own, you'll need to install [`kaleido`](https://github.com/plotly/Kaleido) in addition to the environment set up listed above. Note that as of version 1.0.0, kaleido requires a separate installation of Chromium, which is user-specific, hence not included in project. Either way, interactive Plotly plots are available directly in the notebook.

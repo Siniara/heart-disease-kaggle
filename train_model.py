@@ -1,5 +1,5 @@
 """Train and save a logistic regression model on the heart disease dataset based on the experiments in initial_modelling.ipynb.
-Model: LR with C=0.1, imputer strategy=mean. Outputs a model.joblib file in the root of the project."""
+Model: LR with C=1.0, imputer strategy=mean. Outputs a model.joblib file in the root of the project."""
 
 import joblib
 import polars as pl
@@ -58,7 +58,7 @@ preprocessor.set_output(transform="polars")
 lr = Pipeline(
     [
         ("preprocess", preprocessor),
-        ("clf", LogisticRegression(C=0.1, max_iter=1000, solver="lbfgs")),
+        ("clf", LogisticRegression(C=1.0, max_iter=1000, solver="lbfgs")),
     ]
 )
 
